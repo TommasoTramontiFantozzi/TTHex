@@ -1,0 +1,47 @@
+object Form4: TForm4
+  Left = 766
+  Height = 109
+  Top = 408
+  Width = 320
+  BorderIcons = []
+  BorderStyle = bsDialog
+  Caption = 'Progress'
+  ClientHeight = 109
+  ClientWidth = 320
+  LCLVersion = '4.0.0.4'
+  OnClose = FormClose
+  OnShow = FormShow
+  object ProgressBar1: TProgressBar
+    Left = 0
+    Height = 28
+    Top = 0
+    Width = 320
+    Align = alTop
+    Smooth = True
+    Step = 100
+    TabOrder = 0
+  end
+  object Button1: TButton
+    Left = 186
+    Height = 30
+    Top = 67
+    Width = 112
+    Cancel = True
+    Caption = 'Cancel'
+    TabOrder = 1
+    OnClick = Button1Click
+  end
+  object Label1: TLabel
+    Left = 128
+    Height = 1
+    Top = 32
+    Width = 1
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 500
+    OnTimer = Timer1Timer
+    Left = 69
+    Top = 52
+  end
+end

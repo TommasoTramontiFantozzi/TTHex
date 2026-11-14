@@ -1,0 +1,63 @@
+object Form2: TForm2
+  Left = 520
+  Height = 119
+  Top = 393
+  Width = 330
+  BorderStyle = bsDialog
+  Caption = 'Insert empty bytes'
+  ClientHeight = 119
+  ClientWidth = 330
+  PopupMode = pmAuto
+  LCLVersion = '4.0.0.4'
+  object RadioButton1: TRadioButton
+    Left = 184
+    Height = 23
+    Top = 16
+    Width = 61
+    Caption = 'Right'
+    TabOrder = 0
+  end
+  object RadioButton2: TRadioButton
+    Left = 24
+    Height = 23
+    Top = 16
+    Width = 53
+    Caption = 'Left'
+    Checked = True
+    TabOrder = 4
+    TabStop = True
+  end
+  object SpinEdit1: TSpinEdit
+    Left = 184
+    Height = 34
+    Top = 48
+    Width = 82
+    MaxValue = 2147483647
+    TabOrder = 1
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 56
+    Width = 108
+    Caption = 'How many bytes'
+  end
+  object Button1: TButton
+    Left = 24
+    Height = 23
+    Top = 88
+    Width = 106
+    Caption = 'Cancel'
+    TabOrder = 2
+    OnClick = Button1Click
+  end
+  object Button2: TButton
+    Left = 160
+    Height = 23
+    Top = 88
+    Width = 106
+    Caption = 'OK'
+    TabOrder = 3
+    OnClick = Button2Click
+  end
+end
